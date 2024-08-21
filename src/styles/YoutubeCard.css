@@ -1,0 +1,37 @@
+/* YoutubeCard.css */
+.youtube-card {
+    display: block;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    margin: 0 auto;
+    /* Center the card */
+}
+
+.youtube-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.youtube-card h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2em;
+    /* Adjust the font size for better responsiveness */
+    margin: 10px 0;
+}
+
+@media (max-width: 1200px) {
+    .youtube-card {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .youtube-card {
+        max-width: 100%;
+    }
+}

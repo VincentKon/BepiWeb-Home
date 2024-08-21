@@ -1,0 +1,141 @@
+/* Main Container */
+.about {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Background Image Styling */
+.bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../assets/img/bg.png) no-repeat center center;
+    opacity: 0.8;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* About Container */
+.aboutContainer {
+    display: flex;
+    z-index: 1;
+    padding: 75px 0px;
+    background: linear-gradient(to bottom, #040404, #2e2600, #826D00);
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    margin-top: 8em;
+}
+
+.allcontent {
+    width: 90%;
+    max-width: 1000px;
+}
+
+/* First Section */
+.first-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.content-about {
+    width: 60%;
+}
+
+.content p {
+    text-align: justify;
+}
+
+.aboutImg {
+    width: 250px;
+    height: 320px;
+    object-fit: cover;
+}
+
+/* Second Section */
+.second-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.team-info,
+.company-info {
+    width: 45%;
+}
+
+.team-info h3,
+.company-info h3 {
+    margin-bottom: 8px;
+}
+
+.team-info p,
+.company-info p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Company Info Alignment */
+.company-info {
+    text-align: right;
+}
+
+/* Bottom Section */
+.bottom-content {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #040404, #040404, #826c0000);
+    width: 100%;
+}
+
+.mixer-image {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.additional-info {
+    padding: 20px;
+}
+
+.additional-info p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .first-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-about {
+        width: 100%;
+    }
+
+    .aboutImg {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .content {
+        width: 100%;
+    }
+
+
+}

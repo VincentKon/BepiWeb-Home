@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-title">
+      <h1>Music Video</h1>
+    </div>
+    <div class="slider">
+      <div class="slide-container swiper">
+        <h1>Recent</h1>
+        <div class="js-slide-content-recent slide-content">
+          <div class="card-wrapper swiper-wrapper js-card-wrapper-recent"></div>
+        </div>
+        <div
+          class="swiper-button-next swiper-navBtn js-swiper-button-next-recent"
+        ></div>
+        <div
+          class="swiper-button-prev swiper-navBtn js-swiper-button-prev-recent"
+        ></div>
+        <div class="swiper-pagination js-swiper-pagination-recent"></div>
+      </div>
+      <div class="slide-container swiper">
+        <h1>Popular</h1>
+        <div class="js-slide-content-popular slide-content">
+          <div
+            class="card-wrapper swiper-wrapper js-card-wrapper-popular"
+          ></div>
+        </div>
+        <div
+          class="swiper-button-next swiper-navBtn js-swiper-button-next-popular"
+        ></div>
+        <div
+          class="swiper-button-prev swiper-navBtn js-swiper-button-prev-popular"
+        ></div>
+        <div class="swiper-pagination js-swiper-pagination-popular"></div>
+      </div>
+
+      <div class="slide-container swiper">
+        <h1>Oldest</h1>
+        <div class="js-slide-content-oldest slide-content">
+          <div
+            class="card-wrapper swiper-wrapper js-card-wrapper-oldest"
+          ></div>
+        </div>
+        <div
+          class="swiper-button-next swiper-navBtn js-swiper-button-next-oldest"
+        ></div>
+        <div
+          class="swiper-button-prev swiper-navBtn js-swiper-button-prev-oldest"
+        ></div>
+        <div class="swiper-pagination js-swiper-pagination-oldest"></div>
+      </div>
+      <div class="popup" id="details">
+        <div class="popup__content js-popup-content"></div>
+      </div>
+    </div>
+    <script src="swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

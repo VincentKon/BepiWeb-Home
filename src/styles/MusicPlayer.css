@@ -1,0 +1,45 @@
+.music-player-container {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 247, 0, 0.4),
+    rgba(217, 217, 217, 0.3)
+  );
+  color: white;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 10000;
+}
+
+.artist-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.music-info {
+  display: flex;
+  align-items: center;
+}
+
+.music-title {
+  text-transform: uppercase;
+  color: black;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.play-button {
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  cursor: pointer;
+}

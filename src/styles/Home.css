@@ -1,0 +1,68 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/img/bg.png) no-repeat center center;
+    opacity: 0.8;
+    background-size: cover;
+    z-index: -1;
+}
+
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    z-index: 1;
+    text-align: center;
+}
+
+.heroContainer h1 {
+    font-size: 64px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.heroContainer p {
+    margin-top: 0;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    padding: 20px;
+    width: 420px;
+}
+
+.btnContainer .button {
+    text-decoration: none;
+    padding: 8px 30px;
+    width: 130px;
+    border: 2px solid;
+    border-image-slice: 1;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    border-image-source: linear-gradient(45deg, #ffd710, #6D5500, #040404);
+    background: transparent;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+.btnContainer .button:hover {
+    background: linear-gradient(45deg, #ffd710, #6D5500, #040404);
+    color: #000;
+}

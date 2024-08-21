@@ -1,0 +1,10 @@
+.instagram-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to right, #f7c5ff3e, #5f075b40);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
