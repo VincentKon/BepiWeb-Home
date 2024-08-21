@@ -73,6 +73,8 @@ body {
   /* max-width: 330px;
   min-width: 330px; */
   box-shadow: 4px 4px 6px #ffd710;
+  transition: box-shadow 2s ease;
+  transition-duration: 5000;
 }
 .card-content {
   margin-bottom: 40px;
@@ -85,8 +87,17 @@ body {
   padding: 10px 14px;
 }
 .card-border {
+  border-radius: 25px;
   cursor: pointer;
 }
+.card-border:hover .card-image {
+  outline-offset: 0rem;
+  outline: 10px solid #ffd710;
+}
+.card:hover {
+  box-shadow: 8px 8px 12px #ffd710;
+}
+
 .image-content {
   row-gap: 5px;
   position: relative;
@@ -127,6 +138,9 @@ body {
   border-radius: 15px;
   background-color: #ffd710;
   padding: 3px;
+  outline: 0px solid #ffd710;
+  outline-offset: 0rem;
+  transition: all 1s ease;
 }
 .card-image .card-img {
   height: 100%;
@@ -151,9 +165,9 @@ body {
 }
 .top-left-btn {
   position: absolute;
-  top: 15px; /* Adjust the value as needed */
-  left: 15px; /* Adjust the value as needed */
-  z-index: 1; /* Ensure the button appears above the image */
+  top: 15px;
+  left: 15px;
+  z-index: 1;
   font-weight: bold;
   width: 35px;
   height: 35px;
@@ -161,7 +175,15 @@ body {
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
 }
+.card-border:hover .top-left-btn {
+  transform: scale(1.1);
+}
+
 .swiper-navBtn {
   /* height: 100% !important; */
   width: calc(var(--swiper-navigation-size) / 44 * 27) !important;
@@ -176,6 +198,7 @@ body {
 }
 .swiper-navBtn:hover {
   color: #ffd710 !important;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .swiper-navBtn::before,
 .swiper-navBtn::after {
