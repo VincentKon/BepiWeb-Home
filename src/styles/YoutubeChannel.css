@@ -243,7 +243,8 @@ body {
 .swiper-scrollbar {
   --swiper-scrollbar-bottom: 0;
   --swiper-scrollbar-drag-bg-color: black;
+  border: 1px solid #ffd710;
   /* --swiper-scrollbar-bg-color: rgba(0, 0, 0, 0.1); */
   --swiper-scrollbar-bg-color: #ffd710;
-  --swiper-scrollbar-size: 4px;
+  --swiper-scrollbar-size: 8px;
 }
